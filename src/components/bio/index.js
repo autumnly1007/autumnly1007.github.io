@@ -12,13 +12,21 @@ function Bio({ author, language = 'ko' }) {
       {language === 'ko' ? (
         <div className="introduction korean">
           <p className="title">
+            차곡차곡 쌓아두고
+            <br />
+            꼭꼭 씹어먹는
+            <br />
+            사계절 무한루프 개발일기 📘
+          </p>
+          <br />
+          {/* <p className="title">
             안녕하세요.
             <br />
             <ReactRotatingText items={bio.description} />
             <br />
             {bio.role} <strong>{name}</strong>입니다.
             <br />
-          </p>
+          </p> */}
           <div className="social-links">
             <IconButtonBar links={social} />
           </div>

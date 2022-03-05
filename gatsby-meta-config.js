@@ -1,5 +1,5 @@
 module.exports = {
-  title: `autumnly1007.github.io`,
+  title: `사계절 개발일기`,
   description: `사계절 개발일기`,
   language: `ko`, // `ko`, `en` => currently support versions for Korean and English
   siteUrl: `https://autumnly1007.github.io`,
@@ -14,8 +14,8 @@ module.exports = {
     name: `안가을`,
     bio: {
       role: `개발자`,
-      description: ['사람에 가치를 두는', '능동적으로 일하는', '이로운 것을 만드는'],
-      thumbnail: 'sample.png', // Path to the image in the 'asset' folder
+      description: ['꾸준히 노력하며 성장하는', '될 때까지 하는', '긍정적이고 감사할 줄 아는', '고양이와 키보드를 좋아하는'],
+      thumbnail: 'yarn_logo.png', // Path to the image in the 'asset' folder
     },
     social: {
       github: `https://github.com/autumnly1007`,
@@ -42,15 +42,15 @@ module.exports = {
       },
       // ========================================================
       // ========================================================
-      {
-        date: '2020.04 ~',
-        activity: '웹 개발',
-        /*links: {
+      {/*
+         date: '2020.04 ~',
+         activity: '웹 개발',
+        links: {
           post: '/gatsby-starter-zoomkoding-introduction',
           github: 'https://autumnly1007.github.io/blog',
           demo: 'https://autumnly1007.github.io',
-        },*/
-      },
+        },
+      */},
     ],
 
     projects: [
@@ -71,30 +71,30 @@ module.exports = {
       },
       // ========================================================
       // ========================================================
-      {
+      {/*
         title: '공공기관 홈페이지 및 관리 시스템 구축',
-        /*description:
-          '',*/
+        description:
+          '',
         techStack: ['java', 'spring', 'javascript', 'scss', 'mssql', 'mariaDB'],
-        // thumbnailUrl: 'blog.png',
-        /*links: {
+        thumbnailUrl: 'blog.png',
+        links: {
           post: '/gatsby-starter-zoomkoding-introduction',
           github: 'https://github.com/zoomkoding/zoomkoding-gatsby-blog',
           demo: 'https://www.zoomkoding.com',
-        },*/
-      },
-      {
+        },
+      */},
+      {/*
         title: '공공기관 ERP 시스템 구축',
-        /*description:
-          '',*/
+        description:
+          '',
         techStack: ['java', 'spring', 'javascript', 'oracle'],
-        // thumbnailUrl: 'blog.png',
-        /*links: {
+        thumbnailUrl: 'blog.png',
+        links: {
           post: '/gatsby-starter-zoomkoding-introduction',
           github: 'https://github.com/zoomkoding/zoomkoding-gatsby-blog',
           demo: 'https://www.zoomkoding.com',
-        },*/
-      },
+        },
+      */},
     ],
   },
 };
