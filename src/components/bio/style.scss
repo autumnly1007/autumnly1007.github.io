@@ -16,7 +16,7 @@
 
 .bio {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-between;
   width: 100%;
   margin-top: 100px;
@@ -100,11 +100,12 @@
   }
 
   .thumbnail-wrapper {
-    display: none;
-    width: 250px;
+    display: block;
+    width: 150px;
 
     @include md {
       display: block;
+      width: 250px;
     }
   }
 }
