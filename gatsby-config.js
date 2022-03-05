@@ -120,6 +120,14 @@ module.exports = {
         ],
       },
     },
+    {
+      resolve: `gatsby-plugin-gtag`,
+      options: {
+        trackingId: `G-GFMMBDY7YE`,
+        head: false,
+        anonymize: true,
+      },
+    },
     `gatsby-theme-material-ui`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-advanced-sitemap`,

@@ -12,6 +12,8 @@ function PageFooter({ author, githubUrl }) {
         <a href="https://github.com/zoomKoding/zoomkoding-gatsby-blog">
           &nbsp;zoomkoding-gatsby-blog
         </a> */}
+        &nbsp;Powered by&nbsp;
+        <a href="https://www.gatsbyjs.com/" target="_blank" rel="noreferrer noopener" aria-label="Gatsby">Gatsby</a>
       </p>
     </footer>
   );
