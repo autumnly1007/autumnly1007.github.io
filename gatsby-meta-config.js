@@ -15,7 +15,7 @@ module.exports = {
     bio: {
       role: `개발자`,
       description: ['꾸준히 노력하며 성장하는', '될 때까지 하는', '긍정적이고 감사할 줄 아는', '고양이와 키보드를 좋아하는'],
-      thumbnail: 'yarn_logo.png', // Path to the image in the 'asset' folder
+      thumbnail: 'yarn-logo.png', // Path to the image in the 'asset' folder
     },
     social: {
       github: `https://github.com/autumnly1007`,
