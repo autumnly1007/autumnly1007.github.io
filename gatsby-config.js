@@ -20,35 +20,35 @@ module.exports = {
         path: `${__dirname}/content`,
       },
     },
-    {
-      resolve: 'gatsby-plugin-robots-txt',
-      options: {
-        resolveEnv: () => NETLIFY_ENV,
-        env: {
-          production: {
-            policy: [{ userAgent: '*' }],
-          },
-          'branch-deploy': {
-            policy: [{ userAgent: '*', disallow: ['/'] }],
-            sitemap: null,
-            host: null,
-          },
-          'deploy-preview': {
-            policy: [{ userAgent: '*', disallow: ['/'] }],
-            sitemap: null,
-            host: null,
-          },
-        },
-      },
-    },
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: metaConfig.ga,
-        head: true,
-        anonymize: true,
-      },
-    },
+    // {
+    //   resolve: 'gatsby-plugin-robots-txt',
+    //   options: {
+    //     resolveEnv: () => NETLIFY_ENV,
+    //     env: {
+    //       production: {
+    //         policy: [{ userAgent: '*' }],
+    //       },
+    //       'branch-deploy': {
+    //         policy: [{ userAgent: '*', disallow: ['/'] }],
+    //         sitemap: null,
+    //         host: null,
+    //       },
+    //       'deploy-preview': {
+    //         policy: [{ userAgent: '*', disallow: ['/'] }],
+    //         sitemap: null,
+    //         host: null,
+    //       },
+    //     },
+    //   },
+    // },
+    // {
+    //   resolve: `gatsby-plugin-google-analytics`,
+    //   options: {
+    //     trackingId: metaConfig.ga,
+    //     head: true,
+    //     anonymize: true,
+    //   },
+    // },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -126,6 +126,14 @@ module.exports = {
         trackingId: `G-GFMMBDY7YE`,
         head: false,
         anonymize: true,
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://autumnly1007.github.io',
+        sitemap: 'https://autumnly1007.github.io/sitemap.xml',
+        policy: [{userAgent: '*', allow: '/'}]
       },
     },
     `gatsby-theme-material-ui`,
