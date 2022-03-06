@@ -29,6 +29,7 @@ function Bio({ author, language = 'ko' }) {
           </p> */}
           <div className="social-links">
             <IconButtonBar links={social} />
+            <a className="hits" href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fautumnly1007.github.io&count_bg=%2358ADE5&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=Total+%2F+Today+&edge_flat=false"/></a>
           </div>
         </div>
       ) : (

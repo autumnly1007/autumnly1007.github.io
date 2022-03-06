@@ -55,6 +55,12 @@
         }
       }
 
+      .hits {
+        position: relative;
+        left: 10px;
+        top: 4px;
+      }
+
       @include md {
         font-size: 20px;
         line-height: 1.6;
@@ -101,7 +107,7 @@
 
   .thumbnail-wrapper {
     display: block;
-    width: 150px;
+    width: 130px;
 
     @include md {
       display: block;
