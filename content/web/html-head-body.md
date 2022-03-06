@@ -11,7 +11,7 @@ categories: WEB
 
 ```html
 <!DOCTYPE html>
-<html>
+<html lang="ko">
   <head>
     ...
   </head>
@@ -25,6 +25,11 @@ categories: WEB
 
 문서의 **전체 범위**<br />
 HTML 문서가 어디에서 시작하고, 어디에서 끝나는지 브라우저에게 알려주는 역할을 한다.
+
+- \<html lang="ko"><br />
+  lang(language 단어의 약어)은 지정할 문서의 언어(ISO 639-1)를 명시하는 HTML 속성이다.<br />
+  지정 가능한 언어 목록 : https://ko.wikipedia.org/wiki/ISO_639-1_코드_목록<br />
+  다른 나라의 언어로 설정 시, 구글 크롬에서는 페이지 번역을 할 것인지 자동으로 물어보게 된다.
 
 ### 2. \<head>\</head>
 
