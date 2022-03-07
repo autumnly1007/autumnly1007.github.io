@@ -3,7 +3,7 @@ emoji:
 title: Element 간의 관계
 date: '2022-03-08 21:20:00'
 author: 안가을
-tags: html emmet
+tags: html element relationship
 categories: WEB
 ---
 
