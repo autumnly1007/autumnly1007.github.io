@@ -3,7 +3,7 @@ emoji:
 title: '[vscode] 탭 사이즈 변경하기'
 date: '2022-03-07 20:20:00'
 author: 안가을
-tags: vscode
+tags: vscode tabsize 탭사이즈 공백사이즈
 categories: TOOL
 ---
 
