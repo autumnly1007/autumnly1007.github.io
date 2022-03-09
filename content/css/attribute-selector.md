@@ -4,7 +4,7 @@ title: '[CSS] 속성 선택자'
 date: '2022-03-09 15:50:00'
 author: 안가을
 tags: web css
-categories: WEB
+categories: CSS
 ---
 
 ## 💙 속성 선택자 (Attribute Selector)

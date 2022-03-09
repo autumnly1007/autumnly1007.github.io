@@ -1,10 +1,10 @@
 ---
 emoji:
-title: Inline 요소와 Block 요소
+title: '[CSS] Inline 요소와 Block 요소'
 date: '2022-03-08 21:50:00'
 author: 안가을
 tags: html css inline block
-categories: WEB
+categories: CSS
 ---
 
 ## 💙 글자와 상자

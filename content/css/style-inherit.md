@@ -4,7 +4,7 @@ title: '[CSS] 스타일 상속'
 date: '2022-03-09 16:50:00'
 author: 안가을
 tags: web css
-categories: WEB
+categories: CSS
 ---
 
 ## 💙 스타일 상속

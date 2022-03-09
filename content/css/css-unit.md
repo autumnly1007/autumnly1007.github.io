@@ -4,7 +4,7 @@ title: '[CSS] 단위'
 date: '2022-03-09 23:30:00'
 author: 안가을
 tags: web css
-categories: WEB
+categories: CSS
 ---
 
 ## 💙 CSS 단위

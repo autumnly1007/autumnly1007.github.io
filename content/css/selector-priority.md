@@ -4,7 +4,7 @@ title: '[CSS] 선택자 우선순위'
 date: '2022-03-09 18:30:00'
 author: 안가을
 tags: web css
-categories: WEB
+categories: CSS
 ---
 
 ## 💙 선택자 우선순위

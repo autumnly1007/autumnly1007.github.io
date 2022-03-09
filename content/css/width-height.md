@@ -4,7 +4,7 @@ title: '[CSS] 너비 (width, height)'
 date: '2022-03-09 20:30:00'
 author: 안가을
 tags: web css
-categories: WEB
+categories: CSS
 ---
 
 ## 💙 너비 (width, height)

@@ -1,10 +1,10 @@
 ---
 emoji:
-title: 스타일 선언 방식
+title: '[CSS] 스타일 선언 방식'
 date: '2022-03-09 14:00:00'
 author: 안가을
-tags: web
-categories: WEB
+tags: web css
+categories: CSS
 ---
 
 ## 💙 style 의 선언 방식 네가지
