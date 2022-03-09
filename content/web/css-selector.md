@@ -1,6 +1,6 @@
 ---
 emoji:
-title: CSS 선택자
+title: '[CSS] 선택자'
 date: '2022-03-09 15:00:00'
 author: 안가을
 tags: web css
