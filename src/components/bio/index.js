@@ -12,7 +12,7 @@ function Bio({ author, language = 'ko' }) {
       {language === 'ko' ? (
         <div className="introduction korean">
           <p className="title">
-            차곡차곡 쌓아두고
+            차곡차곡 모아두고
             <br />
             꼭꼭 씹어먹는
             <br />
