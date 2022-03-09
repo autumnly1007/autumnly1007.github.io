@@ -69,7 +69,8 @@ span.blue {
 }
 ```
 
-선택자 A 와 B 를 동시에 만족하는 요소를 선택한다.
+[ABCXYZ]<br />
+선택자 ABC 와 XYZ 를 동시에 만족하는 요소를 선택한다.
 
 ### 6. 자식 선택자 (Child Combinator)
 
@@ -85,7 +86,8 @@ ul > .blue {
 }
 ```
 
-선택자 A 의 자식 요소인 B 를 선택한다.
+[ABC > XYZ]<br />
+선택자 ABC 의 자식 요소인 XYZ 를 선택한다.
 
 ### 7. 하위 선택자 (Descendant Combinator)
 
@@ -106,7 +108,8 @@ div .blue {
 }
 ```
 
-선택자 A 의 하위 요소인 B 를 선택한다.<br />
+[ABC XYZ]<br />
+선택자 ABC 의 하위 요소인 XYZ 를 선택한다.<br />
 '띄어쓰기' 가 선택자의 기호이다.
 
 ### 8. 인접 형제 선택자 (Adjacent Sibling Combinator)
@@ -125,9 +128,11 @@ div .blue {
 .blue + li {
   color: blue;
 }
+// 초록
 ```
 
-선택자 A 의 다음 형제 요소인 B 하나를 선택한다. // 초록
+[ABC + XYZ]<br />
+선택자 ABC 의 다음 형제 요소인 XYZ 하나를 선택한다.
 
 ### 9. 일반 형제 선택자 (General Sibling Combinator)
 
@@ -145,9 +150,11 @@ div .blue {
 .blue ~ li {
   color: blue;
 }
+// 초록, 보라
 ```
 
-선택자 A 의 다음 형제 요소를 모두 선택한다. // 초록, 보라
+[ABC ~ XYZ]<br />
+선택자 ABC 의 다음 형제 요소 XYZ 모두를 선택한다.
 
 ```toc
 
