@@ -18,7 +18,7 @@ function HomePage({ data }) {
 
   return (
     <Layout>
-      <Seo title="do! while(true) dev-diary" />
+      <Seo title="do-while(true) diary" />
       <Bio author={author} language={language} />
       <PostTabs
         posts={posts}
