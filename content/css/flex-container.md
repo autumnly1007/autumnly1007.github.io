@@ -32,7 +32,7 @@ container 의 자식 요소를 item 이라고 부른다.
 
 <br />
 
-## 1. flex container
+## 1. Flex Container
 
 ### (1) display
 
@@ -86,9 +86,121 @@ flex-direction: column 을 명시적으로 작성하는 경우가 흔하지는 �
 
 Flex Items 묶음(**줄 바꿈**) 여부
 
-- 기본값: nowrap - 묶음(줄 바꿈) 없음
-- wrap: 여러 줄로 묶음
-- wrap-reverse: wrap 의 반대 반향으로 묶음
+기본적으로 flex container 는<br />
+한 줄에서 모든 아이템을 표시하려 시도함
+
+- 기본값: `nowrap` - 묶음(줄 바꿈) 없음
+- `wrap`: 여러 줄로 묶음
+- `wrap-reverse`: wrap 의 반대 반향으로 묶음
+
+<br />
+
+### (4) justify-content
+
+**주 축**의 정렬 방법
+
+- 기본값: `flex-start` - Flex Items 를 시작점으로 정렬
+- `flex-end`: Flex Items 를 끝점으로 정렬
+- `center`: Flex Items 를 가운데 정렬
+- `space-between`: 각 Flex Item 사이를 균등하게 정렬
+- `space-around`: 각 Flex Item 의 외부 여백을 균등하게 정렬
+
+<br />
+
+### (5) align-content
+
+**교차 축**의 **여러 줄** 정렬 방법
+
+정렬이 가능한 여백이 있어야 하고<br />
+아이템이 두 줄 이상이어야 동작한다. (flex-wrap: wrap)
+
+이처럼 조건에 부합해야 동작하기 때문에,<br />
+수직 정렬 시에는 align-content 보다는 **align-items** 를 더 많이 사용한다.
+
+- 기본값: `stretch` - Flex Items 를 시작점으로 정렬<br />
+  만약 item 의 너비를 명시하지 않으면 container 의 너비 만큼 늘어난다.
+- `flex-start`: Flex Items 를 시작점으로 정렬
+- `flex-end`: Flex Items 를 끝점으로 정렬
+- `center`: Flex Items 를 가운데 정렬
+- `space-between`: 각 Flex Item 사이를 균등하게 정렬
+- `space-around`: 각 Flex Item의 외부 여백을 균등하게 정렬
+
+<br />
+
+### (6) align-items
+
+**교차 축**의 **한 줄** 정렬 방법
+
+- 기본값: `stretch` - Flex Items 를 교차 축으로 늘림
+- flex-start: Flex Items 를 각 줄의 시작점으로 정렬
+- flex-end: Flex Items 를 각 줄의 끝점으로 정렬
+- center: Flex Items 를 각 줄의 가운데 정렬
+- baseline: Flex Items 를 각 줄의 문자 기준선에 정렬
+
+<br />
+
+## 2. Flex Items
+
+### (1) order
+
+Flex Item 의 **순서**
+
+html 구조를 바꾸지 않고도
+화면에 출력되는 순서를 변경할 수 있음
+
+- 기본값: 0 - 순서 없음
+- 숫자: 숫자가 작을 수록 먼저 정렬됨
+
+<br />
+
+### (2) flex-grow
+
+Flex Item 의 **증가** 너비 비율
+
+- 기본값: 0 - 증가 비율 없음
+- 숫자: 증가 비율
+
+```css
+.item1 {
+  ...;
+}
+.item2 {
+  ...
+  flex-grow: 2;
+}
+.item3 {
+  ...
+  flex-grow: 1;
+}
+```
+
+item2 는 item1 이 차지한 영역을 제외한 영역을<br />
+item3 과 나누어서 2:1 의 비율로 차지하게 됨
+
+<br />
+
+### (3) flex-shrink
+
+Flex Item 의 **감소 너비** 비율
+
+요소가 자신의 기본적인 크기보다 작아지려고 할 때<br />
+감소 너비가 적용되기 시작함
+
+- 기본값: 1 - Flex Container 너비에 따라 감소 비율 적용
+- 숫자: 감소 비율
+
+flex-shink: 0 으로 명시하게 되면,<br />
+컨테이너가 줄어서 각각의 아이템이 차지할 수 있는 공간이 없더라도<br />
+그 아이템들의 실제 너비만큼 크기를 유지한다.
+
+<br />
+
+### (4) flex-basis
+
+Flex Item 의 공간 배분 전 **기본** 너비
+
+- 기본값: auto - 요소의 Content 너비 (요소의 글자 만큼의 영역)
+- 단위: px, em, rem 등 단위로 지정
 
 ```toc
 
