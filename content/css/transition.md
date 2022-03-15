@@ -1,6 +1,6 @@
 ---
 emoji:
-title: '[CSS] 전환'
+title: '[CSS] 전환 (transition)'
 date: '2022-03-14 23:00:00'
 author: 안가을
 tags: web css transition
