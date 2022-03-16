@@ -167,6 +167,91 @@ transform: perspective(500px) rotateX(45deg) rotateY(45deg);
 원근법 함수는 반드시 **제일 앞**에 작성해야 함<br />
 거리가 가까울수록 왜곡이 심하게 일어남<br />
 
+<br />
+
+### 4. perspective
+
+**하위 요소**를 관찰하는 **원근 거리**를 지정
+
+- 단위: px 등 단위로 지정
+
+<br />
+
+#### \* perspective 속성과 함수의 차이점
+
+(1) 속성
+
+- perspective: 600px;
+- 적용대상: 관찰 대상의 부모
+- 기준점 설정: perspective-origin
+
+```css
+.parent {
+  ...
+  perspective: 500px;
+}
+
+.child {
+  ...
+  transform: rotateY(45deg);
+}
+```
+
+<br />
+
+(2) 함수
+
+- transform: perspective(600px)
+- 적용대상: 관찰 대상
+- 기준점 설정: transform-origin
+
+```css
+.parent {
+  ...
+}
+
+.child {
+  ...
+  transform: perspective(500px) rotateY(45deg);
+}
+```
+
+함수보다는 관찰 대상의 부모를 적용대상으로 하는 속성을 사용하는 것이 좋다.
+
+<br />
+
+### 5. backface-visibility
+
+3D 변환으로 회전된 요소의 뒷면 숨김 여부
+
+- 기본값: visible - 뒷면 보임
+- hidden: 뒷면 숨김
+
+```css
+.parent {
+  ...
+}
+
+.child {
+  ...
+  transform: rotateY(180deg);
+}
+/* 요소의 뒷면이 보여짐 */
+```
+
+```css
+.parent {
+  ...
+}
+
+.child {
+  ...
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+}
+/* 요소의 뒷면이 숨겨짐 */
+```
+
 ```toc
 
 ```
