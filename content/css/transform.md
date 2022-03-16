@@ -1,7 +1,7 @@
 ---
 emoji:
 title: '[CSS] 변환 (transform)'
-date: '2022-03-14 23:30:00'
+date: '2022-03-15 20:30:00'
 author: 안가을
 tags: web css transform
 categories: CSS
@@ -30,6 +30,14 @@ transform: 원근법 이동 크기 회전 기울임;
 - translateX(x): 이동(x축)
 - translateY(y): 이동(y축)
 
+```css
+transform: translate(40px, 40px);
+
+transform: translateX(40px);
+```
+
+<br />
+
 #### (2) **scale**
 
 `크기` / 없음 (배수 사용)
@@ -41,11 +49,29 @@ transform: 원근법 이동 크기 회전 기울임;
 한쪽 축만 명시하면 찌그러질 수 있기 때문애<br />
 보통은 크기 제어 시 x, y 축을 모두 명시함
 
+```css
+transform: scale(1.5);
+
+transform: scale(0.7);
+
+transform: scaleX(2);
+```
+
+<br />
+
 #### (3) **rotate**
 
 `회전` / deg 단위 사용
 
 - rotate(degree): 회전(각도)
+
+```css
+transform: rotate(45deg);
+
+transform: rotateX(45deg);
+```
+
+<br />
 
 #### (4) **skew**
 
@@ -54,6 +80,14 @@ transform: 원근법 이동 크기 회전 기울임;
 - skew(x, y): 기울임(x축, y축)
 - skewX(x): 기울임(x축)
 - skewY(y): 기울임(y축)
+
+```css
+transform: skewX(45deg);
+
+transform: skewX(-45deg);
+```
+
+<br />
 
 #### (5) **matrix**
 
@@ -76,12 +110,16 @@ transform: 원근법 이동 크기 회전 기울임;
 - translateZ(z): 이동(z축)
 - translate3d(x,y,z): 이동(x축, y축, z축)
 
+<br />
+
 #### (2) **scale**
 
 `크기` / 없음 (배수 사용)
 
 - scaleZ(z): 크기(z축)
 - scale3d(x,y,z): 크기(x축, y축, z축)
+
+<br />
 
 #### (3) **rotate**
 
@@ -94,6 +132,8 @@ transform: 원근법 이동 크기 회전 기울임;
 
 3D 변환 함수에서는 주로 rotateX, rotateY 가 자주 사용됨
 
+<br />
+
 #### (4) **skew**
 
 `기울임` / deg 단위 사용
@@ -102,6 +142,8 @@ transform: 원근법 이동 크기 회전 기울임;
 - skewX(x): 기울임(x축)
 - skewY(y): 기울임(y축)
 
+<br />
+
 #### (5) **matrix**
 
 - matrix3d(n, n, n, n, n, n, n, n, n, n, n, n, n, n, n, n): 3차원 변환 효과
@@ -109,11 +151,21 @@ transform: 원근법 이동 크기 회전 기울임;
 > 앞에서 살펴본 모든 3D 변환함수들은 matrix3d 함수를 별칭으로 분류해 놓은 변환함수들이며,<br />
 > 브라우저 내에서 matrix3d 함수를 통해 관리된다.
 
+<br />
+
 #### (6) **perspective**
 
 `원근법` / px 단위 사용
 
 - perspective(n): 원근법(거리)
+
+```css
+/* 원근법을 이용해서 3D 변환 사용하기  */
+transform: perspective(500px) rotateX(45deg) rotateY(45deg);
+```
+
+원근법 함수는 반드시 **제일 앞**에 작성해야 함<br />
+거리가 가까울수록 왜곡이 심하게 일어남<br />
 
 ```toc
 
