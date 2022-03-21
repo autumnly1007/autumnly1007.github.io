@@ -1,6 +1,6 @@
 ---
 emoji:
-title: 'favicon'
+title: 'Favicon'
 date: '2022-03-20 20:30:00'
 author: 안가을
 tags: web js web
@@ -34,6 +34,8 @@ favicon 을 따로 지정하지 않으면<br />
 
 다른 형식의 이미지 파일을 favicon 으로 사용할 때에는
 link 태그로 지정해 주어야 한다.
+
+> .ico 파일 만들기 : https://iconifier.net/
 
 ```toc
 
