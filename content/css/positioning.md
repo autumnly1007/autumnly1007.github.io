@@ -204,6 +204,12 @@ position 속성의 값으로 `absolute`, `fixed` 가 지정된 요소는,<br />
 위의 두 요소는 같은 스타일을 가진다.<br />
 .text2 에는 자동으로 display: block; 스타일이 적용된다.
 
+<br />
+
+> 일반적으로 Block 요소는 가로 너비가 최대한 늘어나려고 시도하지만,<br />
+> position: fixed, absolute 로 지정된 경우에는<br />
+> 가로 너비가 최소한으로 줄어들기 위해 시도한다.
+
 ```toc
 
 ```
