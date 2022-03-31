@@ -73,8 +73,24 @@ npm --version
 [모듈 설치방법]
 
 ```powershell
-npm install [Package 이름] // node_modules 폴더 하위에 해당 패키지가 생성됨
+# 일반 의존성 설치
+npm install [Package 이름]
 ```
+
+- node_modules 폴더 하위에 해당 패키지가 생성됨
+- 해당 패키지가 개발을 할 때 필요하면서, 웹 브라우저에서 직접적으로 동작하는 경우 사용
+- package.json 파일에 dependencies 로 추가됨
+
+<br />
+
+```powershell
+# 개발용 의존성 패키지 설치
+npm install [Package 이름] -D (--save-dev)
+```
+
+- node_modules 폴더 하위에 해당 패키지가 생성됨
+- 해당 패키지가 개발을 할 때에만 필요한 경우 사용 (웹 브라우저에서 직접적으로 동작하지 않는 경우)
+- package.json 파일에 devDependencies 로 추가됨
 
 <br />
 
@@ -85,23 +101,6 @@ npm init -y
 ```
 
 <br />
-
-[package.json]
-
-```powershell
-{
-  "name": "test", // 프로젝트명 (기본값: 디렉토리명)
-  "version": "1.0.0", // 프로젝트 버전
-  "description": "", // 프로젝트 설명
-  "main": "index.js", // 프로젝트를 패키지로 만들어 npm 에 업로드할 때 사용 (웹에서는 필요없음)
-  "script": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [], // 키워드
-  "author": "", // 소유주
-  "license": "ISC" // 라이센스
-}
-```
 
 ### 3. NVM (Node Version Manager)
 
@@ -160,6 +159,57 @@ nvm use [Node.js 버전]
 ```powershell
 nvm uninstall [Node.js 버전]
 ```
+
+<br />
+
+### 4. package.json
+
+```powershell
+{
+  # 프로젝트명 (기본값: 디렉토리명)
+  "name": "test",
+
+  # 프로젝트 버전
+  "version": "1.0.0",
+
+  # 프로젝트 설명
+  "description": "",
+
+  # 프로젝트를 패키지로 만들어 npm 에 업로드하는 경우 사용 (웹에서는 필요없음)
+  # 모듈 활용 시, js 파일에서 import 변수명 from 'index';
+  "main": "index.js",
+
+  # 프로젝트 내부에서 사용하는 명령어
+  # npm run [script 명령어]
+  "script": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+
+  # 키워드
+  "keywords": [],
+
+  # 소유주
+  "author": "",
+
+  # 라이센스
+  "license": "ISC"
+}
+```
+
+npm install 을 이용해 패키지를 설치하면 package.json 파일에<br />
+해당 패키지의 이름과 버전이 자동으로 추가된다.
+
+만약 node_modules 폴더가 삭제되더라도 (패키지가 삭제되더라도)<br />
+package.json 파일에 설치했던 패키지의 내용들이 있기 때문에<br />
+`npm i (install)` 명령어를 사용하면 패키지들을 재설치할 수 있다.
+
+<br />
+
+### 5. package-lock.json
+
+package.json 파일에 명시되어져 있는 모듈들이<br />
+내부적으로 사용하는 또 다른 모듈들의 정보가 작성되어져 있다.<br />
+자동으로 관리되기 때문에 따로 수정할 필요가 없다.
 
 ```toc
 
