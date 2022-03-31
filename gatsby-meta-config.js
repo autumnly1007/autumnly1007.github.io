@@ -1,6 +1,6 @@
 module.exports = {
-  title: `do-while(true) diary`,
-  description: `do-while(true) diary`,
+  title: `cotudyRoom`,
+  description: `cotudyRoom`,
   language: `ko`, // `ko`, `en` => currently support versions for Korean and English
   siteUrl: `https://autumnly1007.github.io`,
   ogImage: `/og-image.png`, // Path to your in the 'static' folder
