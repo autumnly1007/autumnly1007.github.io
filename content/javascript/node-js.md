@@ -4,7 +4,7 @@ title: '[JS] Node.js'
 date: '2022-03-29 20:30:00'
 author: 안가을
 tags: web js javascript node
-categories: WEB
+categories: JS
 ---
 
 ## 💙 Node.js
@@ -75,6 +75,8 @@ npm --version
 ```powershell
 # 일반 의존성 설치
 npm install [Package 이름]
+
+npm install [Package 이름]@[설치할 특정 버전]
 ```
 
 - node_modules 폴더 하위에 해당 패키지가 생성됨
@@ -99,6 +101,25 @@ npm install [Package 이름] -D (--save-dev)
 ```powershell
 npm init -y
 ```
+
+<br />
+
+[설치된 모듈의 정보 확인]
+
+```powershell
+npm info [Package 이름]
+```
+
+<br />
+
+[모듈 버전 업데이트]
+
+```powershell
+npm update [Package 이름]
+```
+
+package.json 파일에서 업데이트 하려는 모듈의 버전 앞에 ^(캐롯) 기호가 명시되어 있어야 한다.<br />
+이 기호는 npm update 를 통해 최신 버전으로 업데이트 할 수 있다는 것을 의미한다.
 
 <br />
 
