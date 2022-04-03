@@ -3,7 +3,7 @@ emoji:
 title: '표기법'
 date: '2022-03-19 21:30:00'
 author: 안가을
-tags: web case
+tags: web notation
 categories: WEB
 ---
 
